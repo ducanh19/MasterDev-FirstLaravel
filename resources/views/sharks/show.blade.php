@@ -14,6 +14,7 @@
     <ul class="nav navbar-nav">
         <li><a href="{{ URL::to('sharks') }}">View All sharks</a></li>
         <li><a href="{{ URL::to('sharks/create') }}">Create a shark</a>
+        <li><a href="{{ URL::to('admin') }}">Admin</a>
     </ul>
 </nav>
 
