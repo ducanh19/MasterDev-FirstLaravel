@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\sharkController;
+use App\Http\Controllers\scheduleController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -21,3 +22,9 @@ Route::get('/', function () {
 });
 
 Route::resource('sharks', sharkController::class);
+
+Route::get('admin', function () {
+    return view('admin');
+});
+
+Route::resource('admin/schedules', scheduleController::class);
